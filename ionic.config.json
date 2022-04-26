@@ -1,0 +1,7 @@
+{
+  "name": "TCCAPP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
