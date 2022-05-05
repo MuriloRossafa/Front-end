@@ -12,12 +12,16 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'cliente',
-    loadChildren: () => import('./Cadastro/cliente/cliente.module').then( m => m.ClientePageModule)
+    path: 'centraldodentista',
+    loadChildren: () => import('./centraldodentista/centraldodentista.module').then( m => m.CentraldodentistaPageModule)
   },
   {
-    path: 'consultorio',
-    loadChildren: () => import('./Cadastro/consultorio/consultorio.module').then( m => m.ConsultorioPageModule)
+    path: 'centraldocliente',
+    loadChildren: () => import('./centraldocliente/centraldocliente.module').then( m => m.CentraldoclientePageModule)
+  },
+  {
+    path: 'teladecadastro',
+    loadChildren: () => import('./teladecadastro/teladecadastro.module').then( m => m.TeladecadastroPageModule)
   },
 ];
 

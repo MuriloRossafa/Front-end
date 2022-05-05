@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>teladecadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Qual você dejesa cadastrar?</ion-label>
+    <ion-select placeholder="Escolha Um" [(ngModel)]="tipo">
+      <ion-select-option value="c">Consultorio</ion-select-option>
+      <ion-select-option value="p">Paciente</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <div *ngIf="tipo == 'c'">
+    <ion-input placeholder="Nome"></ion-input>
+    <ion-input placeholder="Senha"></ion-input>
+    <ion-input placeholder="Confirmar Senha"></ion-input>
+    <ion-input placeholder="CNPJ"></ion-input>
+    <ion-input placeholder="Nome do Consultório"></ion-input>
+    <ion-input placeholder="Email"></ion-input>
+    <ion-button color="primary">Salvar</ion-button>
+    <ion-button color="primary">Cancelar</ion-button>
+
+  </div>
+  <div *ngIf="tipo == 'p'">
+    <ion-input placeholder="Nome"></ion-input>
+    <ion-input placeholder="Senha"></ion-input>
+    <ion-input placeholder="Confirmar Senha"></ion-input>
+    <ion-input placeholder="Email"></ion-input>
+    <ion-button color="primary">Salvar</ion-button>
+    <ion-button color="primary">Cancelar</ion-button>
+
+  </div>
+</ion-content>
