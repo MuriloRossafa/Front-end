@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'teladecadastro',
     loadChildren: () => import('./teladecadastro/teladecadastro.module').then( m => m.TeladecadastroPageModule)
   },
+  {
+    path: 'tela-inicial-paciente',
+    loadChildren: () => import('./tela-inicial-paciente/tela-inicial-paciente.module').then( m => m.TelaInicialPacientePageModule)
+  },
 ];
 
 @NgModule({
