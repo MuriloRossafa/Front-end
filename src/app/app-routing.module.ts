@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'tela-inicial-paciente',
     loadChildren: () => import('./tela-inicial-paciente/tela-inicial-paciente.module').then( m => m.TelaInicialPacientePageModule)
   },
+  {
+    path: 'telainicialcliente',
+    loadChildren: () => import('./telainicialcliente/telainicialcliente.module').then( m => m.TelainicialclientePageModule)
+  },
 ];
 
 @NgModule({
